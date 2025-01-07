@@ -1,0 +1,23 @@
+name: MinecraftBlockSearch
+version: '1.0-SNAPSHOT'
+main: org.example.vzoid.minecraftBlockSearch.MinecraftBlockSearch
+api-version: '1.21'
+description: A plugin that initiates a block search game where players find specific blocks.
+author: YourName
+website: https://yourwebsite.com
+commands:
+  blocksearch:
+    description: Start or stop the Block Search game.
+    usage: /blocksearch <start|stop>
+    aliases: [bs]
+permissions:
+  blocksearch.start:
+    description: Allows a player to start the Block Search game.
+    default: op
+  blocksearch.stop:
+    description: Allows a player to stop the Block Search game.
+    default: op
+  blocksearch.use:
+    description: Allows a player to use Block Search commands.
+    default: true
+
